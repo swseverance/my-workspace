@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@my-workspace/apples": ["libs/apples/src/index.ts"]
+      "@my-workspace/apples": ["libs/apples/src/index.ts"],
+      "@my-workspace/carrots": ["libs/carrots/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
