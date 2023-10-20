@@ -1,17 +1,15 @@
 import { TestBed } from '@angular/core/testing';
-import { AppComponent } from './app.component';
-import { ApplesModule } from '@my-workspace/apples';
+import { ApplesComponent } from './apples.component';
 
-describe('AppComponent', () => {
+describe('ApplesComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ApplesModule],
-      declarations: [AppComponent],
+      declarations: [ApplesComponent],
     }).compileComponents();
   });
 
   it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
+    const fixture = TestBed.createComponent(ApplesComponent);
     fixture.detectChanges();
     expect(fixture.componentInstance).toBeTruthy();
   });
