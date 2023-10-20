@@ -2,7 +2,9 @@
   "name": "@my-workspace/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:fruits": "nx serve fruits"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~16.2.0",
