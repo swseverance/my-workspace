@@ -13,6 +13,6 @@ describe('AppComponent', () => {
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    expect(fixture.componentInstance).toBeTruthy();
+    expect(fixture.componentInstance).toBeFalsy();
   });
 });
