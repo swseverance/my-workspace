@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { httpResource } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-todos',
@@ -8,5 +9,6 @@ import { httpResource } from '@angular/common/http';
   styleUrl: './todos.css',
 })
 export class Todos {
-  todos = httpResource<string[]>(() => '/api/todos');
+  private http = inject(HttpClient);
+  todos = toSignal(this.http.get<string[]>('/api/todos'), { initialValue: [] });
 }

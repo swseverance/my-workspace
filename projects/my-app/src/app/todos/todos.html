@@ -1,11 +1,5 @@
-@if (todos.isLoading()) {
-  <p>Loading...</p>
-} @else if (todos.error()) {
-  <p>Error loading todos.</p>
-} @else {
-  <ul>
-    @for (todo of todos.value(); track todo) {
-      <li>{{ todo }}</li>
-    }
-  </ul>
-}
+<ul>
+  @for (todo of todos(); track todo) {
+    <li>{{ todo }}</li>
+  }
+</ul>
