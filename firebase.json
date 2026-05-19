@@ -2,12 +2,12 @@
   "apphosting": [
     {
       "backendId": "my-app",
-      "rootDir": "./projects/my-app",
+      "rootDir": "projects/my-app",
       "ignore": ["node_modules", ".git", "firebase-debug.log", "firebase-debug.*.log", "functions"]
     },
     {
       "backendId": "my-other-app",
-      "rootDir": "./projects/my-other-app",
+      "rootDir": "projects/my-other-app",
       "ignore": ["node_modules", ".git", "firebase-debug.log", "firebase-debug.*.log", "functions"]
     }
   ]
